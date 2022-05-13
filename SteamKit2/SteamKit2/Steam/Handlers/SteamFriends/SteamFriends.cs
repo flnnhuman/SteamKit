@@ -117,6 +117,17 @@ namespace SteamKit2
             }
         }
         /// <summary>
+        /// Gets the friend count of the local user.
+        /// </summary>
+        /// <returns>The number of friends.</returns>
+        public List<SteamID> GetFriendList()
+        {
+            lock ( listLock )
+            {
+                return friendList;
+            }
+        }
+        /// <summary>
         /// Gets a friend by index.
         /// </summary>
         /// <param name="index">The index.</param>

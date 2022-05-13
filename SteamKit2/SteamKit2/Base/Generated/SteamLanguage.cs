@@ -1907,6 +1907,7 @@ namespace SteamKit2
 		LookingToTrade = 5,
 		LookingToPlay = 6,
 		Invisible = 7,
+        InGame = 8,
 	}
 	public enum EAccountType
 	{
